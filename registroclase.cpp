@@ -4,7 +4,7 @@
 #include <stdlib.h>
 struct registro{
     char nombre[20];
-    int NIA;
+    char NIA[11];
 }alum;
 
 int main() {
@@ -13,12 +13,12 @@ int main() {
     gets (alum.nombre);
 
     printf ("NIA: ");
-    scanf ("d", &alum.NIA);
+    gets (alum.NIA);
 
     FILE * fp;
 
     fp=fopen("archivo.txt", "a"); //Los datos se almacenan en archivos.txt
-    //No se reinicia el archivo, los datos se van                                añadiendo al final
+    //No se reinicia el archivo, los datos se van añadiendo al final
     if (fp==NULL) {
         printf("No pudo crearse correctamente");
 
