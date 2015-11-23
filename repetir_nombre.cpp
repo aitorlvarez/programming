@@ -8,22 +8,21 @@
 
 int main(int argc, const char **argv)
 {
-    int i,veces,a;
+    int veces,i;  //Definimos como "i" un contador y como "veces" las repeticiones que tendrán lugar
     char nombre [10];
 
     printf(BLANCO"¿Como te llamas? "CYAN);
-    scanf("%s",&nombre);
+    scanf("%s",nombre);
     printf(BLANCO"¿Cúantas veces quieres que escriba tu nombre? "CYAN);
-    scanf("%i" RESET,&veces);
-
-    a=0;
-    i=1;
+    scanf("%i" RESET,&veces); 
+    
+    i=1;    //Empieza el contador(contando la primera vez)
+    
     do{
-        printf(NARANJA "%s\n" RESET,nombre);
-        a=a+i;
-        i=i+1;
+        printf(NARANJA "%s\n" RESET,nombre); //Escribe el nombre
+        i++;
     }
-    while(i<=veces);
+    while(i<=veces); //Repetirá el nombre hasta llegar al número de veces solicitadas
 
     return EXIT_SUCCESS;
 }
