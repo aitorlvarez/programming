@@ -11,28 +11,28 @@ int main(int argc, char const *argv[]){
 
 printf("Numeros sin ordenar\n\n");
 
-	for (int i = 0 ; i < N ; i++)
+	for (int i = 0 ; i < N ; i++)     //Imprimir los números originales
 	printf ("%i\t", pila[i]);
 
 printf("\n\n");
 
 for (int i = 0; i < 4; i++)
             {
-                for (int b = 0; b < 4 - i; b++)
+                for (int b = 0; b < 4 - i; b++)                   
                 {
-                    if (pila[b] > pila[b + 1])
+                    if (pila[b] > pila[b + 1])             //Comparar una celda con la siguiente (celda1, celda2)
                     {
-                        int inter;
-                        inter = pila[b];
-                        pila[b] = pila[b + 1];
-                        pila[b + 1] = inter;
+                        int inter;                        
+                        inter = pila[b];                //Guardar valor de la celda 1 en una variable intermedia
+                        pila[b] = pila[b + 1];          //Poner en celda1 el valor de celda2
+                        pila[b + 1] = inter;            //Poner en celda2 el valor de la variable intermedia
                     }
                 }
             }
 
 
 printf("Numeros ordenados\n\n");
-for (i=0 ; i<N ; i++)
+for (i=0 ; i<N ; i++)                 //Imprimir los números ordenados
 	printf ("%i\t", pila[i]);
 
 printf("\n\n");
