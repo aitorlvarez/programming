@@ -23,7 +23,7 @@ for (int i = 0; i < 4; i++)
                     if (pila[b] > pila[b + 1])             //Comparar una celda con la siguiente (celda1, celda2)
                     {
                         int inter;                        
-                        inter = pila[b];                //Guardar valor de la celda 1 en una variable intermedia
+                        inter = pila[b];                //Guardar valor de celda1 en una variable intermedia
                         pila[b] = pila[b + 1];          //Poner en celda1 el valor de celda2
                         pila[b + 1] = inter;            //Poner en celda2 el valor de la variable intermedia
                     }
