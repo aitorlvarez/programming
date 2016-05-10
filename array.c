@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 5
+#define N 5   
 
 int main(int argc, char const *argv[]){
 
-	int pila[N] = {742, 32, 5, 41, 3}; 
+	int pila[N] = {742, 32, 5, 41, 3};   //Definir el array
 	int i;
 
 
